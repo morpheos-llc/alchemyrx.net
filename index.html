@@ -114,6 +114,15 @@
             fill: var(--gold-dim);
         }
 
+        .pentagram-symbol {
+            width: clamp(120px, 20vw, 200px);
+            height: auto;
+            margin-top: 5rem;
+            margin-bottom: 2rem;
+            opacity: 0;
+            animation: fadeIn 1.2s ease 0.3s forwards;
+        }
+
         .logo {
             font-family: 'Cormorant Garamond', serif;
             font-size: clamp(3rem, 8vw, 6rem);
@@ -168,6 +177,7 @@
             transition: all 0.4s ease;
             opacity: 0;
             animation: fadeIn 1.2s ease 1.2s forwards;
+            margin-bottom: 8rem;
         }
 
         .cta-button::before {
@@ -192,7 +202,7 @@
 
         .scroll-indicator {
             position: absolute;
-            bottom: 2rem;
+            bottom: 3rem;
             left: 50%;
             transform: translateX(-50%);
             display: flex;
@@ -725,6 +735,8 @@
             <svg viewBox="0 0 24 24"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
             <span></span>
         </div>
+
+        <img src="pentagram-hires-clean-trans.png" alt="Pentagram Symbol" class="pentagram-symbol">
 
         <h1 class="logo">Alchemy<span>Rx</span></h1>
         <p class="tagline">Prescriptions for the Soul</p>
